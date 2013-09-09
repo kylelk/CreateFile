@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:gravity="center"
-    android:orientation="vertical" >
+    android:minWidth="300dp" android:padding="5dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
+    <EditText 
+		android:id="@+id/file_path" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:hint="path" 
+		android:inputType="textUri" />
+	<EditText 
+    	android:id="@+id/textbody_field" 
+    	android:layout_width="fill_parent" 
+    	android:inputType="textMultiLine" 
+    	android:layout_height="wrap_content"
+		android:hint="content" />
 
-</LinearLayout>
+    <LinearLayout 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="fill_parent" 
+    	android:id="@+id/linearLayout1" 
+    	android:layout_marginTop="4dp" />
+
+        <Button 
+        	android:id="@+id/save_button" 
+        	android:layout_height="wrap_content" 
+        	android:layout_width="wrap_content" 
+        	android:text="Create File"
+        	android:onClick="saveButton"/>
+    </LinearLayout>
+
+
