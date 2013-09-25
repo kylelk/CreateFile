@@ -12,6 +12,7 @@
 		android:layout_height="wrap_content" 
 		android:hint="path" 
 		android:inputType="textUri" />
+	
 	<EditText 
     	android:id="@+id/textbody_field" 
     	android:layout_width="fill_parent" 
